@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>form</title>
+	<meta charset="utf-8">
+		<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="angular.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  	.back
+  	{
+  		background-color: lightgray;
+  		height:500px;
+  		width: 45%;
+  		box-sizing: border-box;
+  		box-shadow: 2px 2px 2px 2px black;
+  		justify-content: center;
+  		margin-left: 27.5%;
+  	}
+  	input[type="text"]
+  	{
+  		margin-top: 5%;
+  		line-height: 10px;
+  		width: 30%;
+  		border-radius: 5px;
+  		left: 35%;
+  		position: absolute;
+  	}
+  	.head
+  	{
+  		font-size: 4vw;
+  		margin-top: 25px;
+  		text-align: center;
+  		font-weight: bold;
+  		text-decoration-line: underline;
+  		font-family: georgia sans;
+  		color: blue
+  	}
+  
+  	input[type="submit"]
+  	{
+  		padding: 4px;
+  		width: 10%;
+  		color: white;
+  		font-family: sans-serif;
+  		font-size: 1.5vw;
+  		font-weight: bold;
+  		border:none;
+  		border-radius: 5px;
+  		left:45%;
+  		top: 63%;
+  		position: absolute;
+
+  	}
+  	a
+  	{
+  		font-size: 15px;
+  		font-weight: bold;
+  		position: absolute;
+  		left:35.5%;
+  		top: 55%;
+  	}
+  	.acc
+  	{
+  		font-size: 15px;
+  		font-weight: bold;
+  		position: absolute;
+  		left:57%;
+  		top: 55%;
+  	}
+  	#pw
+  	{
+  		margin-top: 150px;
+  		position: fixed;
+   	}
+  </style>
+  
+	</head>
+<body>
+<div class="container-fluid">	
+		<div ng-app="app" ng-controller="form_control">
+			<div class="back">
+				<form name="fm">
+					<p class="head">LOGIN FORM</p>
+					<div class="form-group">
+						<input type="text" name="uname"  placeholder="Username" class="form-control" ng-required="true">
+					</div>
+						
+					<div class="form-group">
+						<input type="text" name="pass" placeholder="Enter Your password" class="form-control" id="pw">
+					</div>
+					<div class="form-group">
+						<input type="submit" name="submit" class="bg-primary">
+					</div>
+					<a href="#"	>Forgot Password</a>
+					<a href="#"	class="acc">Create Account</a>
+				</form>
+			</div>
+		</div>
+</div>
+
+</body>
+</html>
